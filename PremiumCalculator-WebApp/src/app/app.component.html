@@ -1,0 +1,66 @@
+<form class="form-horizontal">
+  <fieldset>
+  
+  <!-- Form Name -->
+  <legend>Premium Calculator</legend>
+ 
+  <!-- Text input-->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="textinput">Name</label>  
+    <div class="col-md-4">
+    <input id="textinput" name="textinput" type="text" placeholder="Please enter name" class="form-control input-md" required="" [(ngModel)]="premiumParameters.name">
+    
+    </div>
+  </div>
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="textinput">Date of Birth</label>  
+      <div class="col-md-4">
+      <input id="textinput" name="textinput" type="date" placeholder="Select DOB" class="form-control input-md" required="" [(ngModel)]="premiumParameters.dOB">
+     
+      </div>
+    </div>
+
+
+    <!-- Text input-->
+    <div class="form-group">
+      <label class="col-md-4 control-label" for="txtSumAssured">SumAssured</label>  
+      <div class="col-md-4">
+      <input id="txtSumAssured" name="txtSumAssured" type="number" value="0" placeholder="SumAssured" class="form-control input-md" required="" [(ngModel)]="premiumParameters.sumInsured">
+    </div>
+    </div>
+ 
+  <!-- Select Basic -->
+  <div class="form-group">
+    <label class="col-md-4 control-label" for="ddlOccupation">Occupation</label>
+    <div class="col-md-4">
+      <select id="ddlOccupation" name="ddlOccupation" class="form-control" required [(ngModel)]="premiumParameters.occupation">      
+        <option value="">Select</option>
+        <option *ngFor="let occupation of occupationList"  
+        value={{occupation.rating}}>  
+    {{occupation.occupationType}}  
+</option>  
+       
+      </select>
+      
+    </div>
+  </div>
+<br>
+  <!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="btnCalculatePremium"></label>
+  <div class="col-md-4">
+    <input type="submit" id="btnCalculatePremium" text="Calculate Premium" name="btnCalculatePremium" class="btn btn-primary" (click)="CalculatePremium()">
+  </div>
+</div>
+
+<div class="form-group" *ngIf="calculatedPremium">
+  <label class="col-md-4 control-label" for="btnCalculatePremium"></label>
+  <div class="col-md-4">
+   <div>your premium will be : {{calculatedPremium}}</div>
+  </div>
+</div>
+  </fieldset>
+  </form>
+  

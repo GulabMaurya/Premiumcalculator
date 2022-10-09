@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Gulab\\source\\repos\\PremiumCalculator\\PremiumCalculator.csproj": {}
+    "C:\\Users\\Gulab\\source\\repos\\PremiumCalculator-API\\PremiumCalculator\\PremiumCalculator.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Gulab\\source\\repos\\PremiumCalculator\\PremiumCalculator.csproj": {
+    "C:\\Users\\Gulab\\source\\repos\\PremiumCalculator-API\\PremiumCalculator\\PremiumCalculator.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gulab\\source\\repos\\PremiumCalculator\\PremiumCalculator.csproj",
+        "projectUniqueName": "C:\\Users\\Gulab\\source\\repos\\PremiumCalculator-API\\PremiumCalculator\\PremiumCalculator.csproj",
         "projectName": "PremiumCalculator",
-        "projectPath": "C:\\Users\\Gulab\\source\\repos\\PremiumCalculator\\PremiumCalculator.csproj",
+        "projectPath": "C:\\Users\\Gulab\\source\\repos\\PremiumCalculator-API\\PremiumCalculator\\PremiumCalculator.csproj",
         "packagesPath": "C:\\Users\\Gulab\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Gulab\\source\\repos\\PremiumCalculator\\obj\\",
+        "outputPath": "C:\\Users\\Gulab\\source\\repos\\PremiumCalculator-API\\PremiumCalculator\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
